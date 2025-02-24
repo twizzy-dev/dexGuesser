@@ -1,8 +1,7 @@
-# dexGuesser - v0.1.0
+# dexGuesser - v0.2.0
 
-A simple command line Java application that generates a random integer, and you guess the Pokémon that shares that National Pokédex number.
+A simple Java command line application that generates a random integer, and you guess the Pokémon that shares that National Pokédex number.
 Includes all Pokémon from gen 1 to gen 9.
-Application keeps generating numbers until user tells it to stop (by typing `exit`).
 
 ```
 Pokédex No. 25:
@@ -15,18 +14,21 @@ Pokédex No. 445:
 > Weavile
 The correct Pokémon is Garchomp, you were 16 off.
 ```
+Application keeps generating numbers until user tells it to stop, by typing `exit`.<br>
+Keeps track of statistics (such as amount guessed correctly, and average distance away), viewable by typing `stats`.
 
 <br>
 
 ## Usage
 
-Either:
+To play the game, either:
 
-- Download source code and export project to `.jar` file, and run in terminal with `java -jar <file-name>.jar`
+- Download source code and export/build project as `.jar` file, and run in terminal with `java -jar <file-name>.jar`
 
 or
 
-- Clone repository to an IDE and run `CMDApplication` in the built-in terminal/console.
+- Clone repository to an IDE and run `dexGuesserCMD` in the built-in terminal/console.
+
 
 <br>
 
@@ -52,5 +54,5 @@ Information about a Pokémon is stored as follows:
 
 Currently, the text file only contains the first 2 columns.
 Other columns will be populated eventually (most likely using [PokeAPI.co](https://pokeapi.co/)).
-`CMDApplication` only requires National Pokédex number and Pokémon name to function.
+`dexGuesserCMD` only requires National Pokédex number and Pokémon name to function.
 Extra columns exist for future functionality of application.
